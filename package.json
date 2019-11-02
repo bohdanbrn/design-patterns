@@ -1,0 +1,19 @@
+{
+  "name": "patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "module.js",
+  "scripts": {
+    "format": "prettier-eslint --write \"**/*.js\"",
+    "lint": "eslint ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-plugin-import": "^2.18.2",
+    "prettier-eslint": "^9.0.0",
+    "prettier-eslint-cli": "^5.0.0",
+    "standard": "^14.3.1"
+  }
+}
