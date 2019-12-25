@@ -1,19 +1,19 @@
 function Fedex() {
-    this.calculate = (shippingPackage) => {
+    this.calculate = shippingPackage => {
         // Fedex calculations...
         return 2.45;
     };
 }
 
 function UPS() {
-    this.calculate = (shippingPackage) => {
+    this.calculate = shippingPackage => {
         // UPS calculations...
         return 1.99;
     };
 }
 
 function USPS() {
-    this.calculate = (shippingPackage) => {
+    this.calculate = shippingPackage => {
         // USPS calculations...
         return 3.5;
     };
@@ -22,7 +22,7 @@ function USPS() {
 function Shipping() {
     this.company = "";
 
-    this.setStrategy = (company) => {
+    this.setStrategy = company => {
         this.company = company;
     };
     this.calculate = shippingPackage => {

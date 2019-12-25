@@ -1,27 +1,27 @@
 function Observable() {
     const observers = [];
 
-    this.sendMessage = (msg) => {
+    this.sendMessage = msg => {
         for (let i = 0; i < observers.length; i++) {
             observers[i].notify(msg);
         }
     };
 
-    this.addObservers = (observer) => {
+    this.addObservers = observer => {
         observer.push(observer);
     };
 }
 
 function Observer(behaviour) {
-    this.notify = (msg) => {
+    this.notify = msg => {
         behaviour(msg);
     };
 }
 
-const obj1 = new Observer((msg) => {
+const obj1 = new Observer(msg => {
     console.log(msg);
 });
-const obj2 = new Observer((msg) => {
+const obj2 = new Observer(msg => {
     alert(msg);
 });
 

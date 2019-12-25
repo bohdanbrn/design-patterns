@@ -8,7 +8,7 @@ const BasketModule = (function() {
         getTotalPrice: function() {
             let total = 0;
 
-            goods.forEach((item) => {
+            goods.forEach(item => {
                 total += item.price;
             });
 
@@ -18,17 +18,17 @@ const BasketModule = (function() {
             for (let i = 0; i < goods.length; i++) {
                 console.log(goods[i].name, goods[i].price);
             }
-        }
+        },
     };
-}());
+})();
 
 const salt = {
     name: "Salt",
-    price: 2
+    price: 2,
 };
 const bread = {
     name: "Bread",
-    price: 1.5
+    price: 1.5,
 };
 
 BasketModule.addProduct(salt);
